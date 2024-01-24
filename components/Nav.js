@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'tugas', path: '/tugas', icon: <HiWindow /> },
-  { name: 'report', path: '/report-tugas', icon: <HiEnvelope /> },
+  { name: 'report', path: '/tugas-bermasalah', icon: <HiEnvelope /> },
 ];
 
 const Nav = () => {
@@ -21,15 +21,15 @@ const Nav = () => {
       style={{ boxShadow: '2px 4px 4px 8px rgba(0.1, 0, 0, 0.5)',
       border: '2px solid white' }}>
         {navData.map((link, index) => (
-          <Link className={`${link.path === pathname && 'text-yellow-700'} relative flex items-center group hover:text-yellow-700
+          <Link className={`${link.path === pathname && 'text-cyan-400'} relative flex items-center group hover:text-cyan-400
             transition-all duration-300`} href={link.path} key={index}>
 
               {/* tooltip */}
               <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
-                <div className='bg-black relative flex text-white items-center p-[6px] rounded-[3px]'>
+                <div className='bg-cyan-400 relative flex text-white items-center p-[6px] rounded-[3px]'>
                 <div className='text-[12px] leading-none font-semibold capitalize'>{link.name}</div>
                 {/* triangle */}
-                <div className='border-solid border-l-black border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2'></div>
+                <div className='border-solid border-l-cyan-400 border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2'></div>
                 </div>
               </div>
               {/* icon  */}
