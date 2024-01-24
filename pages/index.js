@@ -1,8 +1,8 @@
 // pages/index.js
-import ParticlesContainer from '../components/ParticlesContainer';
-import ProjectsBtn from '../components/ProjectsBtn';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
+// import ParticlesContainer from '../components/ParticlesContainer';
+// import ProjectsBtn from '../components/ProjectsBtn';
+// import { motion } from 'framer-motion';
+// import Image from 'next/image';
 import Avatar from '../components/Avatar';
 
 import React, { useState, useEffect, useRef } from 'react';
